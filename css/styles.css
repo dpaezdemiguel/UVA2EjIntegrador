@@ -139,14 +139,20 @@ main {
 
 
 /* Tabla - Home */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 30px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    overflow: hidden;
 }
 
 .schedule-table th, .schedule-table td {

@@ -144,7 +144,8 @@ main {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     border-radius: 15px;
-    margin-top: 20px;
+    background-color: #e8faff;
+    margin-top: 32px;
 }
 
 .table-container {
@@ -157,13 +158,19 @@ main {
 .schedule-table {
     width: 100%;
     min-width: 700px; 
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .schedule-table {
     width: 100%;
     min-width: 600px; 
-    border-collapse: collapse;
+    border-collapse: separate;
+    overflow: hidden;
+    border-spacing: 0;
+    border-radius: 15px;
     margin-top: 30px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -184,6 +191,22 @@ main {
     background-color: #f2f2f2;
 }
 
+/* Bordes superiores redondeados en los headers */
+.schedule-table thead th:first-child {
+    border-top-left-radius: 15px;
+}
+
+.schedule-table thead th:last-child {
+    border-top-right-radius: 15px;
+}
+
+/* Si querés también bordes abajo (opcional) */
+.schedule-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+.schedule-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
 
 /* Foto perfil - Sobre mí */
 .profile {

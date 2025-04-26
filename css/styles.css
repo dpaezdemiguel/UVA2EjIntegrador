@@ -143,12 +143,12 @@ main {
     width: 100%;
     overflow-x: auto;
     border-radius: 15px;
-    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .schedule-table {
     width: 100%;
+    min-width: 600px; 
     border-collapse: collapse;
     margin-top: 30px;
     background-color: white;
@@ -346,7 +346,7 @@ button[type="submit"]:hover {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .nav-links {
         display: none;
         flex-direction: column;
